@@ -1,0 +1,57 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPV5Qji9Ungg2Z3316i1Sv8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/chindyarmy/Analisis-Deret-Waktu/blob/main/Latihan\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "IGD9VjyAtG5b"
+      },
+      "outputs": [],
+      "source": [
+        "from collections import Counter\n",
+        "\n",
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
+        "\n",
+        "from sklearn.datasets import make_classification\n",
+        "from sklearn.svm import LinearSVC\n",
+        "\n",
+        "from imblearn.pipeline import make_pipeline\n",
+        "from imblearn.base import BaseSampler\n",
+        "from imblearn.under_sampling import RandomUnderSampler\n",
+        "from imblearn.over_sampling import (SMOTE, RandomOverSampler)\n",
+        "from imblearn.combine import SMOTEENN, SMOTETomek\n",
+        "\n",
+        "\n",
+        "import warnings\n",
+        "warnings.simplefilter(action='ignore', category=FutureWarning)"
+      ]
+    }
+  ]
+}
